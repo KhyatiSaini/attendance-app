@@ -39,6 +39,13 @@ jobs:
           channel: "stable"
       - run: flutter pub get
       - run: flutter clean
+      - run: rm -Rf ios/Pods
+      - run: rm -Rf ios/.symlinks
+      - run: rm -Rf ios/Flutter/Flutter.framework
+      - run: rm -Rf ios/Flutter/Flutter.podspec
+      - run: cd ios
+      - run: pod install
+      - run: cd ..
 
       # Build iOS app
       - run: flutter build ios --release --no-codesign
