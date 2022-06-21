@@ -41,7 +41,7 @@ jobs:
       - run: flutter clean
 
       # Build iOS app
-      - run: flutter build ios --release --no-codesign
+      - run: flutter build ios
 
       # Upload the iOS build to GitHub as artifact
       - uses: actions/upload-artifact@v1
