@@ -47,7 +47,7 @@ jobs:
       - uses: actions/upload-artifact@v1
         with:
           name: ios-app
-          path: /Users/runner/work/KhyatiSaini/attendance-app/build/ios/iphoneos
+          path: /Users/runner/work/attendance-app/attendance-app/build/ios/iphoneos
 
   build_appbundle:
     name: Build Flutter (Android)
